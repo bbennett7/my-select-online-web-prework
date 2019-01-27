@@ -6,7 +6,8 @@ def my_select(array)
       new_array = []
       if 
         new_array << yield(array[i])
-      i = i + 1
+        i = i + 1
+      end
     end
  
     new_array
