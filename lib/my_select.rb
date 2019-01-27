@@ -2,14 +2,13 @@ def my_select(array)
  if block_given?
     i = 0
  
-    while i < array.length
-      new_array = []
-        if (yield(array[i]))
-          new_array << array[i]
-        end
-        i = i + 1
-      end
-    end
+  while i < array.length 
+      if (yield(array[i]))
+        # select.push(array[i])OR 
+        select << array[i] 
+      end 
+      i += 1 
+    end 
  
     new_array
   else
