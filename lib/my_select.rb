@@ -4,8 +4,7 @@ def my_select(array)
  
   while i < array.length 
       if (yield(array[i]))
-        # select.push(array[i])OR 
-        select << array[i] 
+        new_array << array[i] 
       end 
       i += 1 
     end 
